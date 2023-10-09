@@ -1,0 +1,416 @@
+@media(max-width: 767px) {
+
+  .section-conteiner_nav {
+    top: 88px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+
+  }
+
+  .section-text_nav {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  /* ======================================================FONTS======================================================== */
+  /* ----------home------------ */
+  h3 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+
+  }
+
+  h1 {
+    font-size: 80px;
+    height: 100px;
+
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 25px;
+
+  }
+
+  .header-conteiner {
+    padding-right: 24px;
+    padding-top: 24px;
+    align-items: flex-start;
+    padding-left: 24px;
+
+  }
+
+  /* ----------nav------------ */
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 67%;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-left: 32px;
+    padding-top: 118px;
+    z-index: 3;
+    /* display: none; */
+  }
+
+  .burger-menu_x {
+    display: block;
+    position: fixed;
+    top: 34px;
+    right: 26.5px;
+    background-image: url(./images/burger-menu_x_icon.svg);
+    background-repeat: no-repeat;
+
+  }
+
+  .nav-block .nav-a:hover,
+  .destination-content li:hover {
+    border-right: 4px solid rgba(151, 151, 151, 1);
+    border-bottom-color: transparent;
+  }
+
+  .nav-block .nav-a:active,
+  .nav-block .nav-a.active,
+  .destination-content li:active,
+  .destination-content li.active {
+    border-right: 4px solid rgba(255, 255, 255, 1);
+    border-bottom-color: transparent;
+  }
+
+  .menu-image_x {
+    width: 20px;
+    height: 20px;
+
+  }
+
+  .nav-number {
+    display: block;
+
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+    border-right-color: rgba(255, 255, 255, 1);
+  }
+
+
+  .decor-cicle {
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/header_icon_adaptive_icon.png);
+
+  }
+
+  .burger-menu {
+    display: block;
+    margin-top: 9px;
+
+  }
+
+  /* ==============================================HOME================================================================ */
+  /* ----------home-text------------ */
+  .home {
+    text-align: center;
+  }
+
+  .home-conteiner {
+    padding-top: 112px;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    gap: 81px;
+
+  }
+
+  .home-text {
+    max-width: 327px;
+    gap: 16px;
+  }
+
+  /* ----------home-explore------------ */
+  .btn-explore {
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 46px rgba(255, 255, 255, 0)
+  }
+
+  .btn-explore:hover {
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    box-shadow: 0 0 0 46px rgba(255, 255, 255, 0.1)
+  }
+
+
+  /* ==============================================DESTINATION================================================================ */
+  /* ----------destination-text------------ */
+  .section_nav-number {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-right: 18px;
+  }
+
+  .section_nav-copy {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+  }
+
+  .destination-conteiner_text-title {
+    font-size: 56px;
+    height: 64px;
+    margin-bottom: 1px;
+  }
+
+  .destination-conteiner_text-p {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  /* ----------destination------------ */
+  .destination {
+    top: 88px;
+
+  }
+
+  .destination-conteiner {
+    width: 100%;
+    max-width: 327px;
+
+  }
+
+  .destination-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+
+  }
+
+  .destination-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+
+  }
+
+  .destination-conteiner_image-block {
+    width: 170px;
+    height: 170px;
+    background-image: url(./images/moon_adaptive-375_image.png);
+    background-repeat: no-repeat;
+  }
+
+
+  /* ----------destination-right_block------------ */
+  .destination-conteiner_text-block {
+    max-width: 327px;
+
+  }
+
+  .destination-conteiner_text-all {
+    width: 100%;
+
+  }
+
+  .destination-conteiner_text-p {
+    text-align: center;
+    margin-bottom: 49px;
+  }
+
+  /* ----------destination-nav------------ */
+  .destination-nav {
+    position: relative;
+    justify-content: center;
+    margin-bottom: 32px;
+    padding-left: 0px;
+    padding-top: 0px;
+    z-index: 1;
+
+  }
+
+  .destination_nav-title {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+
+  }
+
+  .destination-list {
+    justify-content: space-evenly;
+    gap: 26px;
+
+  }
+
+  /* -------------------------------------- */
+  .destination-conteiner_text-information__block {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  /* ==============================================CREW================================================================ */
+  /* ----------crew-text------------ */
+  .crew-conteiner_text-profession {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 16px;
+    height: 18px;
+
+  }
+
+  .crew-conteiner_text-name {
+    text-align: center;
+    font-size: 24px;
+    height: 28px;
+
+  }
+
+  .crew-conteiner_text-p {
+    text-align: center;
+    max-width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+
+  /* ---------------------- */
+  .crew {
+    top: 88px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+
+  }
+
+  .crew-block-conteiner {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+
+  .crew-block {
+    padding-top: 139px;
+    align-items: flex-start;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .crew-conteiner_text-block {
+    position: relative;
+    max-width: 327px;
+  }
+
+  /* ----------crew-TAB------------ */
+  .crew-conteiner_text-tab {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  /* ----------crew-img------------ */
+  .crew-conteiner_image-block {
+    width: 327px;
+    height: 223px;
+    background-image: url(./images/hurley_adaptive_365_photo.png);
+
+  }
+
+  /* ==============================================TECHNOLOGY================================================================ */
+  /* ----------technology-text------------ */
+  .technology-conteiner_text-terminology {
+    margin-bottom: 9px;
+
+  }
+
+  .technology-conteiner_text-ship {
+    font-size: 24px;
+    height: 28px;
+
+  }
+
+  .technology-conteiner_text-p {
+    max-width: 327px;
+    line-height: 25px;
+  }
+
+
+  .technology-block {
+    height: 100vh;
+
+  }
+
+  .technology-block-conteiner {
+    padding-top: 139px;
+    gap: 34px;
+
+  }
+
+  .technology_image-block {
+    /* width: 100%; */
+
+    /* height: 170px;
+    background-image: url(./images/ship_launch_adaptive-375_image.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+
+  .technology_image-parent {
+    width: 100%;
+    height: 170px;
+  }
+
+  .technology-conteiner_info-block {
+    flex-direction: column;
+    gap: 44px;
+
+  }
+
+  /* ----------technology-TAB------------ */
+
+  .technology-a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+  }
+
+  .technology-a:hover {
+    font-size: 16px;
+    letter-spacing: 1px;
+
+  }
+
+  .technology-a:active {
+    font-size: 16px;
+    letter-spacing: 1px;
+
+  }
+
+  .technology-conteiner_text-block {
+    text-align: center;
+  }
+
+
+  .hidden {
+    display: none;
+  }
+
+
+
+}

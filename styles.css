@@ -1,0 +1,792 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ======================================================FONTS======================================================== */
+
+body {
+    /* font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif; */
+    font-family: 'Bellefair', serif;
+}
+
+/* ----------nav------------ */
+a:active,
+a:hover,
+a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: rgba(255, 255, 255, 1)
+}
+
+.nav-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    margin-right: 11px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+
+}
+
+.nav-title {
+    font-weight: 400;
+
+}
+
+/* ----------home------------ */
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    color: rgba(208, 214, 249, 1);
+}
+
+h1 {
+    height: 171px;
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(208, 214, 249, 1);
+    line-height: 32px;
+
+
+}
+
+
+/* ======================================================MAIN======================================================== */
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-bcg {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bcg-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destination-bcg {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bcg_destination_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.crew-bcg {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bcg-crew_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.technology-bcg {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bcg_technology_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ----------block-nav------------ */
+
+.section-conteiner_nav {
+    position: fixed;
+    top: 212px;
+    left: 165px;
+
+}
+
+
+/* ==========================================HEADER==================================================================== */
+header {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    /* max-width: 1385px; */
+    height: 96px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-conteiner {
+    width: 100%;
+    height: 100%;
+    padding-left: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.decor-cicle {
+    width: 48px;
+    height: 48px;
+    background-image: url(./images/header_icon.svg);
+
+}
+
+.decor-line {
+    border-top: 1px solid rgba(151, 151, 151, 1);
+    width: 35vw;
+    position: absolute;
+    left: calc(-1 * (35vw - 20px));
+    z-index: 2;
+    top: 50%;
+
+}
+
+/* ----------nav------------ */
+nav {
+    width: 100%;
+    max-width: 57%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+    display: flex;
+    justify-content: center;
+
+}
+
+.burger-menu_x {
+    display: none;
+
+}
+
+.nav-block {
+    display: flex;
+    align-items: center;
+
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    /* border-bottom: 3px solid transparent; */
+}
+
+.nav-block .nav-a:hover,
+.destination-content li:hover {
+    border-bottom: 3px solid rgba(151, 151, 151, 1);
+    /* border-bottom-color: rgba(151, 151, 151, 1); */
+}
+
+.nav-block .nav-a:active,
+.nav-block .nav-a.active,
+
+.destination-content li:active, 
+.destination-content li.active {
+    border-bottom: 3px solid  rgba(255, 255, 255, 1);
+    /* border-bottom-color: rgba(255, 255, 255, 1); */
+}
+/* .active{
+   border-bottom: 3px solid;
+    border-bottom-color:rgba(255, 255, 255, 1);
+} */
+
+/* ----------burger------------ */
+.burger-menu {
+    display: none;
+}
+
+.menu-image {
+    width: 24px;
+    height: 21px;
+    background-image: url(./images/burger-menu_icon.png);
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* ==============================================HOME================================================================ */
+/* ----------home-text------------ */
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+}
+
+.home-conteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 131px;
+    gap: 391.5px;
+}
+
+.home-text {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ----------home-explore------------ */
+.btn-explore {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    color: rgba(11, 13, 23, 1);
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 88px rgba(255, 255, 255, 0)
+}
+
+.btn-explore:hover {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    color: rgba(11, 13, 23, 1);
+    letter-spacing: 2px;
+    box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1)
+}
+
+/* ==============================================DESTINATION================================================================ */
+/* ----------destination-text------------ */
+.section-text_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.section_nav-number {
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 11px;
+    opacity: 0.25;
+    letter-spacing: 4.725px;
+    margin-right: 24px;
+}
+
+.section_nav-copy {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.destination-conteiner_text-title {
+    font-size: 100px;
+    height: 115px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.destination-conteiner_text-p {
+    margin-bottom: 54px;
+}
+
+h5 {
+    color: rgba(208, 214, 249, 1);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.destination_distance,
+.destination_time {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* ----------destination------------ */
+.destination {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+
+}
+
+.destination-conteiner {
+    width: 100%;
+
+}
+
+.destination-block {
+    padding-top: 98px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+}
+
+.destination-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 157px;
+    /* max-height: 478px; */
+
+}
+
+.destination-conteiner_image-block {
+    width: 445px;
+    height: 445px;
+    background-image: url(./images/moon_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ----------destination-right_block------------ */
+.destination-conteiner_text-block {
+    width: 100%;
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.destination-conteiner_text-all {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------destination-nav------------ */
+.destination-nav {
+    max-width: 100%;
+    height: 34px;
+    display: flex;
+    background: transparent;
+    backdrop-filter: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 37px;
+
+}
+
+.destination-list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    padding: 0;
+
+}
+
+.destination-a {
+    align-items: flex-start;
+}
+
+.nav-block .nav-a {
+    cursor: pointer;
+    list-style: none;
+    border-bottom: 3px solid transparent;
+}
+
+.destination_nav-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+/* ----------destination-text------------ */
+.destination-conteiner_text-information {
+    width: 100%;
+}
+
+.destination-conteiner_text-information_decor-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(56, 59, 75, 1);
+    margin-bottom: 28px;
+}
+
+.destination-conteiner_text-information__block {
+    display: flex;
+    flex-direction: row;
+    gap: 79px;
+}
+
+/* ==============================================CREW================================================================ */
+/* ----------crew-text------------ */
+.crew-conteiner_text-profession {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 188px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+
+}
+
+.crew-conteiner_text-name {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 64px;
+    margin-bottom: 27px;
+
+}
+
+.crew-conteiner_text-p {
+    color: rgba(208, 214, 249, 1);
+    /* max-width: 444px; */
+    line-height: 32px;
+    margin-bottom: 120px;
+}
+
+
+
+/* ---------------------- */
+.crew-block-conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 81.43px;
+}
+
+.crew {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    left: 0px;
+
+}
+
+.crew-block {
+
+    max-height: 712px;
+    height: 100%;
+    width: 100vw;
+
+}
+
+.crew-conteiner_text-block {
+    max-width:614px;
+}
+
+/* ----------crew-TAB------------ */
+.crew-conteiner_text-tab {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 0;
+
+}
+.crew_list{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0.1744;
+    border-bottom: 3px solid transparent;
+}
+/* .crew_tab-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0.1744;
+    border-bottom: 3px solid transparent;
+
+} */
+.crew_list:hover{
+    border-bottom: 3px solid transparent;
+    opacity: 0.5001;
+}
+/* .crew_tab-circle:hover {
+    border-bottom: 3px solid transparent;
+    opacity: 0.5001;
+} */
+/* .crew-list .crew-a .crew_tab-circle .active-d{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: red;
+    opacity: 1;
+    border-bottom: 3px solid transparent;
+} */
+.active-d,
+.crew_list:active{
+    opacity: 1;
+}
+/* .crew_tab-circle:active {
+    opacity: 1;
+} */
+
+/* ----------crew-img------------ */
+.crew-conteiner_image-block {
+    width: 567px;
+    height: 712px;
+    background-image: url(./images/hurley_photo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+
+/* ==============================================TECHNOLOGY================================================================ */
+/* ----------technology-text------------ */
+.technology-conteiner_text-terminology {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-bottom: 11px;
+
+}
+
+.technology-conteiner_text-ship {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Bellefair', serif;
+    font-size: clamp(24px, 3vw, 56px);
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 64px;
+    margin-bottom: 17px;
+
+}
+
+.technology-conteiner_text-p {
+    color: rgba(208, 214, 249, 1);
+    max-width: 444px;
+    line-height: 32px;
+    /* margin-bottom: 120px; */
+}
+
+
+
+/* ---------------------- */
+.technology {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.technology-block-conteiner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 130px;
+    padding-left: 165px;
+
+}
+
+
+
+.technology-block {
+    width: 100%;
+
+}
+
+.technology-conteiner_info-block {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+
+}
+/* ----------technology-TAB------------ */
+.technology-conteiner-tab {
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.technology-a {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+
+.technology-a:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: transparent;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+.technology_list.active-t {
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+.technology_list.active-t .technology-a {
+    color: rgba(11, 13, 23, 1);
+}
+
+
+/* ----------technology-img------------ */
+.technology_image-block {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.technology_image-parent {
+    width: 515px;
+    height: 527px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
